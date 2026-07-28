@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Annex — Dhakshatha M K</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .lab-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:2px; background:var(--line); margin-top:8px;}
+  @media (max-width:760px){ .lab-grid{grid-template-columns:1fr;} }
+  .lab-card{background:var(--paper); padding:30px 28px; display:flex; flex-direction:column; gap:12px; text-decoration:none; color:inherit; transition:background .2s ease;}
+  .lab-card:hover{background:var(--paper-dim);}
+  .lab-card .fig{font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.1em; color:var(--steel);}
+  .lab-card h3{font-size:1.2rem;}
+  .lab-card p{color:var(--ink-soft); font-size:0.92rem; margin:0;}
+  .lab-status{font-family:'IBM Plex Mono',monospace; font-size:0.68rem; letter-spacing:0.06em; text-transform:uppercase; padding:4px 10px; border-radius:20px; display:inline-flex; width:fit-content;}
+  .lab-status.live{background:rgba(51,199,189,0.15); color:#1b8f86;}
+  .lab-status.dev{background:rgba(240,166,58,0.18); color:#a06611;}
+  .lab-status.planned{background:rgba(12,28,38,0.08); color:var(--ink-soft);}
+  .lab-visit{margin-top:auto; padding-top:10px; border-top:1px dashed var(--line); font-family:'IBM Plex Mono',monospace; font-size:0.78rem; color:var(--navy-800); font-weight:600;}
+  .lab-card[data-live="false"] .lab-visit{color:var(--ink-soft); font-weight:400;}
+</style>
+</head>
+<body data-page="annex">
+
+<header class="nav">
+  <div class="navbar">
+    <div class="logo">DM<span>K</span><span style="color:var(--ink-soft);font-weight:400;">/ biomedical eng.</span></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="links" id="navLinks">
+      <a href="index.html" data-page="home">Home</a>
+      <a href="projects.html" data-page="projects">Projects</a>
+      <a href="experience.html" data-page="experience">Experience</a>
+      <a href="ieee.html" data-page="ieee">IEEE</a>
+      <a href="blog.html" data-page="blog">Blog</a>
+      <a href="annex.html" data-page="annex">Annex</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="vessel-bg" aria-hidden="true">
+    <svg viewBox="0 0 900 260" preserveAspectRatio="xMidYMid slice">
+      <g fill="none" stroke="#33c7bd" stroke-width="1.4">
+        <path d="M40,40 C160,60 180,120 260,130 C340,140 360,90 460,100 C560,110 580,170 700,175 C780,178 820,150 870,155" opacity="0.5"/>
+        <path d="M260,130 C280,170 270,210 250,240" opacity="0.35"/>
+        <path d="M460,100 C480,60 520,40 560,20" opacity="0.35"/>
+      </g>
+    </svg>
+  </div>
+  <div class="wrap">
+    <div class="eyebrow">Independent builds</div>
+    <h1>Annex</h1>
+    <p>Standalone tools and mini-sites, each shipped and hosted on their own — separate from the case files above, but built with the same hands.</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap" style="padding:0;">
+    <!--
+      HOW TO ADD A LAB:
+      Duplicate one <a class="lab-card"> block below, edit the text,
+      set data-live="true" once it's deployed, and point href at the real URL.
+    -->
+    <div class="lab-grid reveal">
+
+      <a class="lab-card bracketed" href="#" data-live="false">
+        <span class="fig">ANNEX — BIOSORT</span>
+        <span class="lab-status dev">In development</span>
+        <h3>BioSort</h3>
+        <p>An educational game on biomedical waste segregation — source, color-coded segregation, treatment, and disposal, taught level by level.</p>
+        <span class="lab-visit">→ add live link once deployed</span>
+      </a>
+
+      <a class="lab-card bracketed" href="#" data-live="false">
+        <span class="fig">ANNEX — STERIFLOW</span>
+        <span class="lab-status dev">In development</span>
+        <h3>SteriFlow</h3>
+        <p>A CSSD (Central Sterile Services) workflow training simulator, walking through hospital sterilization from receiving to release.</p>
+        <span class="lab-visit">→ add live link once deployed</span>
+      </a>
+
+      <a class="lab-card bracketed" href="#" data-live="false">
+        <span class="fig">ANNEX — SIGNAL VIZ</span>
+        <span class="lab-status planned">Planned</span>
+        <h3>Biosignal Visualizer</h3>
+        <p>A browser-based ECG / EMG / EEG analyzer with filtering, peak detection, and FFT — read a waveform, see what it means.</p>
+        <span class="lab-visit">→ add live link once deployed</span>
+      </a>
+
+      <a class="lab-card bracketed" href="#" data-live="false">
+        <span class="fig">ANNEX — DEVICE EXPLAINER</span>
+        <span class="lab-status planned">Planned</span>
+        <h3>Pacemaker Explainer</h3>
+        <p>An interactive, clickable cross-section of a dual-chamber cardiac pacemaker — Sense, Decide, Pace, Capture — with natural vs. paced ECG comparison.</p>
+        <span class="lab-visit">→ add live link once deployed</span>
+      </a>
+
+      <a class="lab-card bracketed" href="#" data-live="false">
+        <span class="fig">ANNEX — REFERENCE</span>
+        <span class="lab-status dev">In development</span>
+        <h3>BioMedInstrumentation101</h3>
+        <p>A reference site documenting key medical instruments across diagnostic, radiological, therapeutic, and critical-care categories, each with an interactive deep-dive.</p>
+        <span class="lab-visit">→ add live link once deployed</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-head reveal">
+      <div class="eyebrow">Get in touch</div>
+      <h2>Let's build something that reads a signal well.</h2>
+      <p>Open to biomedical R&amp;D collaborations, IEEE initiatives, and conversations about medtech for low-resource settings.</p>
+    </div>
+    <div class="contact-links reveal">
+      <a href="mailto:dhakshathamylsamy@gmail.com">✉ dhakshathamylsamy@gmail.com</a>
+      <a href="https://www.linkedin.com/in/dhakshatha-m-k" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://github.com/DhakshathaMylsamy" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Dhakshatha M K. Coimbatore, India.</span>
+      <span>Built &amp; hosted on GitHub Pages.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

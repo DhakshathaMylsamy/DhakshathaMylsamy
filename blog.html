@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Dhakshatha M K</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="blog">
+
+<header class="nav">
+  <div class="navbar">
+    <div class="logo">DM<span>K</span><span style="color:var(--ink-soft);font-weight:400;">/ biomedical eng.</span></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="links" id="navLinks">
+      <a href="index.html" data-page="home">Home</a>
+      <a href="projects.html" data-page="projects">Projects</a>
+      <a href="experience.html" data-page="experience">Experience</a>
+      <a href="ieee.html" data-page="ieee">IEEE</a>
+      <a href="blog.html" data-page="blog">Blog</a>
+      <a href="annex.html" data-page="annex">Annex</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="vessel-bg" aria-hidden="true">
+    <svg viewBox="0 0 900 260" preserveAspectRatio="xMidYMid slice">
+      <g fill="none" stroke="#33c7bd" stroke-width="1.4">
+        <path d="M20,130 C200,90 220,180 400,150 C580,120 600,60 780,80 C830,86 860,100 890,95" opacity="0.45"/>
+      </g>
+    </svg>
+  </div>
+  <div class="wrap">
+    <div class="eyebrow">Notes</div>
+    <h1>Blog</h1>
+    <p>Write-ups on builds, IEEE events, and things learned the hard way in the lab.</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+
+    <!--
+      HOW TO ADD A POST:
+      1. Duplicate blog-post-template.html, rename it (e.g. bio-vision-surgical-writeup.html)
+      2. Fill in the title, date, and body
+      3. Add one <a class="blog-row"> block below, pointing to your new file, and delete the empty-state div
+    -->
+
+    <div class="empty-state reveal">
+      <div class="glyph">// NO ENTRIES YET</div>
+      <h3>Nothing posted yet</h3>
+      <p>This page is wired up and ready — write your first post about the TENCON submission, the KONE internship, or how the gesture-tracking pipeline came together, and it'll show up here.</p>
+      <div class="steps">
+        01. Copy blog-post-template.html, rename it<br>
+        02. Edit the title, date, and body text<br>
+        03. Add a link to it in blog.html<br>
+        04. Push to GitHub — it's live
+      </div>
+    </div>
+
+    <!-- Example of how a published list looks once you have posts (delete or keep as reference):
+    <div class="blog-list">
+      <a class="blog-row" href="bio-vision-surgical-writeup.html">
+        <span class="bdate mono">JUL 2026</span>
+        <h3>Building Bio-Vision Surgical for TENCON 2026</h3>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+    -->
+
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-head reveal">
+      <div class="eyebrow">Get in touch</div>
+      <h2>Let's build something that reads a signal well.</h2>
+      <p>Open to biomedical R&amp;D collaborations, IEEE initiatives, and conversations about medtech for low-resource settings.</p>
+    </div>
+    <div class="contact-links reveal">
+      <a href="mailto:dhakshathamylsamy@gmail.com">✉ dhakshathamylsamy@gmail.com</a>
+      <a href="https://www.linkedin.com/in/dhakshatha-m-k" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://github.com/DhakshathaMylsamy" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Dhakshatha M K. Coimbatore, India.</span>
+      <span>Built &amp; hosted on GitHub Pages.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

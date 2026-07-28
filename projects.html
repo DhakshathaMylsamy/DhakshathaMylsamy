@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Dhakshatha M K</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="projects">
+
+<header class="nav">
+  <div class="navbar">
+    <div class="logo">DM<span>K</span><span style="color:var(--ink-soft);font-weight:400;">/ biomedical eng.</span></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="links" id="navLinks">
+      <a href="index.html" data-page="home">Home</a>
+      <a href="projects.html" data-page="projects">Projects</a>
+      <a href="experience.html" data-page="experience">Experience</a>
+      <a href="ieee.html" data-page="ieee">IEEE</a>
+      <a href="blog.html" data-page="blog">Blog</a>
+      <a href="annex.html" data-page="annex">Annex</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="vessel-bg" aria-hidden="true">
+    <svg viewBox="0 0 900 260" preserveAspectRatio="xMidYMid slice">
+      <g fill="none" stroke="#33c7bd" stroke-width="1.4">
+        <path d="M40,40 C160,60 180,120 260,130 C340,140 360,90 460,100 C560,110 580,170 700,175 C780,178 820,150 870,155" opacity="0.55"/>
+        <path d="M260,130 C280,170 270,210 250,240" opacity="0.4"/>
+        <path d="M460,100 C480,60 520,40 560,20" opacity="0.4"/>
+        <path d="M700,175 C710,200 700,225 680,245" opacity="0.35"/>
+        <path d="M160,60 C150,30 130,15 100,8" opacity="0.3" stroke="#4c7ea3"/>
+      </g>
+      <g fill="#33c7bd">
+        <circle cx="260" cy="130" r="3"/><circle cx="460" cy="100" r="3"/><circle cx="700" cy="175" r="3"/>
+      </g>
+    </svg>
+  </div>
+  <div class="wrap">
+    <div class="eyebrow">Selected work</div>
+    <h1>Five case files</h1>
+    <p>From an EMG-controlled prosthetic to a browser-native coronary visualization pipeline — each project starts with a signal and ends with someone able to act on it.</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap" style="padding:0;">
+    <div class="projects reveal">
+
+      <div class="project bracketed">
+        <span class="fig">FIG. 01 — 2026</span>
+        <h3>Bio-Vision Surgical</h3>
+        <p>A browser-native, gesture-interactive pipeline for patient-specific coronary visualization, running entirely on consumer hardware — no specialized workstation required to explore a patient's cardiac anatomy before surgery.</p>
+        <div class="tags"><span class="tag">WebGL / Browser-native</span><span class="tag">Gesture Interaction</span><span class="tag">Coronary Visualization</span><span class="tag">Consumer Hardware</span></div>
+        <div class="badge new">Accepted for presentation — IEEE TENCON 2026, Bali, Indonesia</div>
+      </div>
+
+      <div class="project bracketed">
+        <span class="fig">FIG. 02 — JAN 2026</span>
+        <h3>Zero-Footprint Virtual Dissection</h3>
+        <p>A gesture-controlled DICOM viewer for sterile operating rooms — no touchscreens, no controllers. Built on TypeScript and Electron with MediaPipe hand tracking and Cornerstone.js, driven by a formal state machine for precise, hardware-free navigation on commodity hospital PCs.</p>
+        <div class="tags"><span class="tag">TypeScript</span><span class="tag">Electron</span><span class="tag">MediaPipe</span><span class="tag">Cornerstone.js</span></div>
+        <div class="badge">Poster selected — IEEE EMBC 2026, Toronto</div>
+      </div>
+
+      <div class="project bracketed">
+        <span class="fig">FIG. 03 — DEC 2025</span>
+        <h3>SmartBio Air</h3>
+        <p>An ESP32-based active health-monitoring system for an algae bioreactor, optimizing carbon-sequestration performance through continuous sensor feedback and control.</p>
+        <div class="tags"><span class="tag">ESP32</span><span class="tag">Sensors</span><span class="tag">Environmental</span></div>
+        <div class="badge">Finalist — IEEE APSCON MYOSA 4.0, $250 kit</div>
+      </div>
+
+      <div class="project bracketed">
+        <span class="fig">FIG. 04 — AUG 2024</span>
+        <h3>CognitoPath</h3>
+        <p>A mobile platform for cognitive rehabilitation after traumatic brain injury, with progress tracking and exercise sets that adapt to each patient's recovery stage.</p>
+        <div class="tags"><span class="tag">Mobile</span><span class="tag">Rehabilitation</span><span class="tag">UX</span></div>
+        <div class="badge">In development</div>
+      </div>
+
+      <div class="project bracketed">
+        <span class="fig">FIG. 05 — FEB 2024</span>
+        <h3>Motor Skill Enhancer Toy</h3>
+        <p>A sensor-integrated therapeutic toy for specially-abled children, combining Arduino and 3D-printed components with real-time data logging to track and customize therapy progress.</p>
+        <div class="tags"><span class="tag">Arduino</span><span class="tag">3D Printing</span><span class="tag">Assistive Tech</span></div>
+        <div class="badge">Field-tested prototype</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-head reveal">
+      <div class="eyebrow">Get in touch</div>
+      <h2>Let's build something that reads a signal well.</h2>
+      <p>Open to biomedical R&amp;D collaborations, IEEE initiatives, and conversations about medtech for low-resource settings.</p>
+    </div>
+    <div class="contact-links reveal">
+      <a href="mailto:dhakshathamylsamy@gmail.com">✉ dhakshathamylsamy@gmail.com</a>
+      <a href="https://www.linkedin.com/in/dhakshatha-m-k" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://github.com/DhakshathaMylsamy" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Dhakshatha M K. Coimbatore, India.</span>
+      <span>Built &amp; hosted on GitHub Pages.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
